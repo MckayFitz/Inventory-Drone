@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Aisle"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            android:textColor="#333333"/>
+
+        <!-- Aisle Buttons A–Z -->
+        <!-- 5 buttons per row, 6 rows total (last row has 1 button) -->
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:weightSum="5">
+            <Button android:id="@+id/btnAisleA" android:text="A" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleB" android:text="B" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleC" android:text="C" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleD" android:text="D" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleE" android:text="E" style="@style/AisleButton"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:weightSum="5">
+            <Button android:id="@+id/btnAisleF" android:text="F" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleG" android:text="G" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleH" android:text="H" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleI" android:text="I" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleJ" android:text="J" style="@style/AisleButton"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:weightSum="5">
+            <Button android:id="@+id/btnAisleK" android:text="K" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleL" android:text="L" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleM" android:text="M" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleN" android:text="N" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleO" android:text="O" style="@style/AisleButton"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:weightSum="5">
+            <Button android:id="@+id/btnAisleP" android:text="P" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleQ" android:text="Q" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleR" android:text="R" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleS" android:text="S" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleT" android:text="T" style="@style/AisleButton"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:weightSum="5">
+            <Button android:id="@+id/btnAisleU" android:text="U" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleV" android:text="V" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleW" android:text="W" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleX" android:text="X" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleY" android:text="Y" style="@style/AisleButton"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:weightSum="5">
+            <Button android:id="@+id/btnAisleZ" android:text="Z" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleAA" android:text="AA" style="@style/AisleButton"/>
+            <Button android:id="@+id/btnAisleBB" android:text="BB" style="@style/AisleButton"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

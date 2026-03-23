@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Pallets"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:paddingBottom="16dp" />
+
+        <GridLayout
+            android:id="@+id/gridPallets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="5"
+            android:rowOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <!-- Pallet buttons 1–28 (plain Button, no Material attrs) -->
+            <Button android:id="@+id/btnPallet1"  android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 1"/>
+            <Button android:id="@+id/btnPallet2"  android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 2"/>
+            <Button android:id="@+id/btnPallet3"  android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 3"/>
+            <Button android:id="@+id/btnPallet4"  android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 4"/>
+            <Button android:id="@+id/btnPallet5"  android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 5"/>
+            <Button android:id="@+id/btnPallet6"  android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 6"/>
+            <Button android:id="@+id/btnPallet7"  android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 7"/>
+            <Button android:id="@+id/btnPallet8"  android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 8"/>
+            <Button android:id="@+id/btnPallet9"  android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 9"/>
+            <Button android:id="@+id/btnPallet10" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 10"/>
+            <Button android:id="@+id/btnPallet11" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 11"/>
+            <Button android:id="@+id/btnPallet12" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 12"/>
+            <Button android:id="@+id/btnPallet13" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 13"/>
+            <Button android:id="@+id/btnPallet14" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 14"/>
+            <Button android:id="@+id/btnPallet15" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 15"/>
+            <Button android:id="@+id/btnPallet16" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 16"/>
+            <Button android:id="@+id/btnPallet17" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 17"/>
+            <Button android:id="@+id/btnPallet18" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 18"/>
+            <Button android:id="@+id/btnPallet19" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 19"/>
+            <Button android:id="@+id/btnPallet20" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 20"/>
+            <Button android:id="@+id/btnPallet21" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 21"/>
+            <Button android:id="@+id/btnPallet22" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 22"/>
+            <Button android:id="@+id/btnPallet23" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 23"/>
+            <Button android:id="@+id/btnPallet24" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 24"/>
+            <Button android:id="@+id/btnPallet25" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 25"/>
+            <Button android:id="@+id/btnPallet26" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 26"/>
+            <Button android:id="@+id/btnPallet27" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 27"/>
+            <Button android:id="@+id/btnPallet28" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Pallet 28"/>
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnEnter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:background="#F5F5F5"
+    tools:context=".CustomMainActivity">
+
+    <!-- Hidden placeholders to prevent crash from missing IDs -->
+    <TextView
+        android:id="@+id/text_connection_status"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_product_info"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_model_available"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+    <!-- Real Content -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ASAP Freight Drone"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/btnScanFullAisle"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Scan Full Aisle"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3F51B5"
+        android:elevation="9dp"
+        android:layout_marginBottom="3dp" />
+
+    <Button
+        android:id="@+id/btnScanPallet"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Scan Pallet"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#009688"
+        android:elevation="6dp"
+        android:layout_marginBottom="1dp" />
+
+    <!-- NEW: Edit button -->
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Edit"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF9800"
+        android:elevation="6dp" />
+
+</LinearLayout>

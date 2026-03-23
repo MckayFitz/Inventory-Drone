@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <!-- 30 square blue buttons -->
+        <!-- Button 1–30 -->
+        <!-- Row 1 -->
+        <Button android:id="@+id/btnAisle1" android:layout_width="64dp" android:layout_height="64dp" android:text="1" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle2" android:layout_width="64dp" android:layout_height="64dp" android:text="2" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle3" android:layout_width="64dp" android:layout_height="64dp" android:text="3" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle4" android:layout_width="64dp" android:layout_height="64dp" android:text="4" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle5" android:layout_width="64dp" android:layout_height="64dp" android:text="5" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+
+        <!-- Row 2 -->
+        <Button android:id="@+id/btnAisle6" android:layout_width="64dp" android:layout_height="64dp" android:text="6" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle7" android:layout_width="64dp" android:layout_height="64dp" android:text="7" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle8" android:layout_width="64dp" android:layout_height="64dp" android:text="8" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle9" android:layout_width="64dp" android:layout_height="64dp" android:text="9" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle10" android:layout_width="64dp" android:layout_height="64dp" android:text="10" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+
+        <!-- Row 3 -->
+        <Button android:id="@+id/btnAisle11" android:layout_width="64dp" android:layout_height="64dp" android:text="11" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle12" android:layout_width="64dp" android:layout_height="64dp" android:text="12" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle13" android:layout_width="64dp" android:layout_height="64dp" android:text="13" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle14" android:layout_width="64dp" android:layout_height="64dp" android:text="14" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle15" android:layout_width="64dp" android:layout_height="64dp" android:text="15" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+
+        <!-- Row 4 -->
+        <Button android:id="@+id/btnAisle16" android:layout_width="64dp" android:layout_height="64dp" android:text="16" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle17" android:layout_width="64dp" android:layout_height="64dp" android:text="17" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle18" android:layout_width="64dp" android:layout_height="64dp" android:text="18" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle19" android:layout_width="64dp" android:layout_height="64dp" android:text="19" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle20" android:layout_width="64dp" android:layout_height="64dp" android:text="20" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+
+        <!-- Row 5 -->
+        <Button android:id="@+id/btnAisle21" android:layout_width="64dp" android:layout_height="64dp" android:text="21" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle22" android:layout_width="64dp" android:layout_height="64dp" android:text="22" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle23" android:layout_width="64dp" android:layout_height="64dp" android:text="23" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle24" android:layout_width="64dp" android:layout_height="64dp" android:text="24" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle25" android:layout_width="64dp" android:layout_height="64dp" android:text="25" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+
+        <!-- Row 6 -->
+        <Button android:id="@+id/btnAisle26" android:layout_width="64dp" android:layout_height="64dp" android:text="26" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle27" android:layout_width="64dp" android:layout_height="64dp" android:text="27" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle28" android:layout_width="64dp" android:layout_height="64dp" android:text="28" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle29" android:layout_width="64dp" android:layout_height="64dp" android:text="29" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/btnAisle30" android:layout_width="64dp" android:layout_height="64dp" android:text="30" android:backgroundTint="#3F51B5" android:textColor="#FFFFFF"/>
+
+    </GridLayout>
+</ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Row for Full Aisle Scan"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:paddingBottom="24dp"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <Button android:id="@+id/btnRow1" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Row 1"/>
+        <Button android:id="@+id/btnRow2" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Row 2"/>
+        <Button android:id="@+id/btnRow3" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Row 3"/>
+        <Button android:id="@+id/btnRow4" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Row 4"/>
+        <Button android:id="@+id/btnRow5" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Row 5"/>
+        <Button android:id="@+id/btnRow6" android:layout_width="120dp" android:layout_height="wrap_content" android:text="Row 6"/>
+    </GridLayout>
+
+</LinearLayout>

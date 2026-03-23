@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dji.sdk.sample">
+
+    <!-- ✅ Core -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- ✅ Location & Bluetooth (DJI SDK) -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Legacy BT (pre-Android 12) -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- Android 12+ BT runtime perms -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation" />
+
+    <!-- ✅ Wi-Fi / Nearby devices (Android 13+) -->
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" tools:targetApi="33" />
+
+    <!-- ✅ Storage (back- and forward-compat) -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" tools:targetApi="33" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" tools:targetApi="33" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- ✅ USB / Hardware features -->
+    <uses-feature android:name="android.hardware.usb.accessory" android:required="false" />
+    <uses-feature android:name="android.hardware.usb.host" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false" />
+
+    <application
+        android:name=".internal.controller.DJISampleApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="ASAP"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:extractNativeLibs="true"
+        tools:replace="label"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        tools:targetApi="31"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true">
+
+        <!-- ✅ Legacy HTTP (ok if unused) -->
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <!-- ✅ DJI SDK API Key -->
+        <meta-data
+            android:name="com.dji.sdk.API_KEY"
+            android:value="15bb0b3ea20cc12df7c1ec7c" />
+
+        <!-- ✅ Launcher -->
+        <activity
+            android:name="com.dji.sdk.sample.internal.controller.MainActivity"
+            android:label="@string/sample_app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter" />
+        </activity>
+
+        <!-- ✅ App Navigation -->
+        <activity android:name=".CustomMainActivity" />
+        <activity android:name=".AisleSelectionActivity" />
+        <activity android:name=".AisleSelectionPallet" />
+        <activity android:name=".RowSelectionFullActivity" />
+        <activity android:name=".RowSelectionPalletActivity" />
+        <activity android:name=".PalletSelectionActivity" />
+        <activity
+            android:name=".DroneFeedActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".DroneFeedActivityPallet" />
+        <activity android:name=".settings.CalibrationActivity" />
+
+        <!-- ✅ Optional -->
+        <activity android:name=".demo.utmiss.UTMISSActivity" />
+
+        <!-- ✅ DJI payload demos -->
+        <activity
+            android:name="com.dji.sdk.sample.demo.payload.PayloadActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.dji.sdk.sample.demo.payload.PayloadSendGetDataActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.dji.sdk.sample.demo.payload.PayloadWidgetActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>
