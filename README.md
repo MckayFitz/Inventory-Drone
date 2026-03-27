@@ -2,9 +2,9 @@
 
 A mobile application built using the DJI Mobile SDK that automates warehouse inventory scanning using a drone. The app enables efficient pallet and aisle scanning with predefined flight paths, real-time camera feed, and mission controls.
 
-<img width="1122" height="638" alt="Screenshot 2026-03-26 181603" src="https://github.com/user-attachments/assets/0c4cff74-5144-4f2d-a9a0-c6e97a5ebf43" />
 <img width="1125" height="627" alt="Screenshot 2026-03-26 181534" src="https://github.com/user-attachments/assets/b40f9f21-e964-46b8-a998-4c88b8b2e424" />
 <img width="1126" height="630" alt="Screenshot 2026-03-26 181618" src="https://github.com/user-attachments/assets/560ab946-f281-406c-af67-41bbb9e1c864" />
+<img width="1122" height="638" alt="Screenshot 2026-03-26 181603" src="https://github.com/user-attachments/assets/0c4cff74-5144-4f2d-a9a0-c6e97a5ebf43" />
 
 
 📱 Features
