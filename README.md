@@ -98,17 +98,6 @@ Android device
 DJI SDK configured
 Developer account with DJI
 
-
-🧠 Future Improvements
-🤖 Object detection (YOLO / TensorFlow Lite)
-📦 Automatic pallet recognition
-☁️ Cloud inventory syncing
-🗺️ 3D warehouse mapping
-📊 Analytics dashboard
-🛑 Safety Notes
-Always operate drone in a safe environment
-Test missions in open areas before warehouse deployment
-Ensure emergency stop is functional before flight
 👤 Author
 
 McKay Fitzgerald
